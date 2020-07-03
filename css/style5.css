@@ -302,3 +302,17 @@ h1 {
         cursor: pointer;
     }
 }
+
+.skipper {
+    position: absolute;
+    top:23px;
+    right: 0;
+    transform: rotate(-90deg) translate(-28.32px, +28.32px);
+    font-family: HKGroteskRegular;
+    font-size: 13px;
+    padding: 12px;
+}
+
+.skipper:hover{
+    color:red;
+}

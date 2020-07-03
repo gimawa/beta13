@@ -30,7 +30,7 @@
                             Typology — Cultural <br>
                             Elaboration — 5th Bachelor‘s Semester (2018) <br>
                             Group Members — Natural Building Lab <br>
-                            Honors — HolzBau Plus &#040;special award&#041;	, Hochschulpreis Holzbau &#040;special award&#041;,<br> Deutscher Holzbaupreis &#040;acknowledgment&#041;, Berliner Holzbaupreis &#040;concept award&#041;
+                            Honors — HolzBau Plus &#040;special award&#041; , Hochschulpreis Holzbau &#040;special award&#041;,<br> Deutscher Holzbaupreis &#040;acknowledgment&#041;, Berliner Holzbaupreis &#040;concept award&#041;
                         </h1>
                     </div>
                     <div id="text">
@@ -125,6 +125,10 @@
             <img class="arrowR" src="img/icons/arrow_right2.png">
         </a>
 
+        <a class="skipper" style="cursor: pointer" onclick="javascript: window.location ='SuperSalon36.html';">
+            next project
+        </a>
+
         <div style="text-align:center">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
@@ -161,7 +165,20 @@
             slides[slideIndex - 1].style.display = "block"; //show the correct slide
             dots[slideIndex - 1].className += " active"; //apply class active to the correct dot
         }
+    </script>
 
+    <script>
+        var winHeight = $(window).height();
+        var navHeight = $('.navbar').height();
+        var conHeight = $('body').height();
+        var sHeight = conHeight - navHeight;
+
+        $('.Container').css('height', winHeight + 'px');
+        $('.subContainer').css('height', sHeight - 35.84 + 'px');
+        $('.prev').css('padding-top', ((sHeight - 50) / 2) + 17.92 + 'px');
+        $('.prev').css('padding-bottom', ((sHeight - 50) / 2) - 17.92 + 'px');
+        $('.next').css('padding-top', ((sHeight - 50) / 2) + 17, 92 + 'px');
+        $('.next').css('padding-bottom', ((sHeight - 50) / 2) - 17.92 + 'px');
     </script>
 
     <div class="navbar">
@@ -188,6 +205,4 @@
             <a class="extra" id="con" style="cursor: pointer" onclick="javascript: window.location = 'contact.html';">contact</a>
         </div>
     </div>
-</body>
-
-</html>
+</body></html>

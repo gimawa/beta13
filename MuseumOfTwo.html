@@ -10,7 +10,7 @@
     <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="js/MOT.js"></script>
     <script type="text/javascript" src="js/height.js"></script>
-    
+
 </head>
 
 <body>
@@ -89,6 +89,10 @@
             <img class="arrowR" src="img/icons/arrow_right2.png">
         </a>
 
+        <a class="skipper" style="cursor: pointer" onclick="javascript: window.location ='DriveInLiving.html';">
+            next project
+        </a>
+
         <div style="text-align:center">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
@@ -125,7 +129,20 @@
             slides[slideIndex - 1].style.display = "block"; //show the correct slide
             dots[slideIndex - 1].className += " active"; //apply class active to the correct dot
         }
+    </script>
 
+    <script>
+        var winHeight = $(window).height();
+        var navHeight = $('.navbar').height();
+        var conHeight = $('body').height();
+        var sHeight = conHeight - navHeight;
+
+        $('.Container').css('height', winHeight + 'px');
+        $('.subContainer').css('height', sHeight - 35.84 + 'px');
+        $('.prev').css('padding-top', ((sHeight - 50) / 2) + 17.92 + 'px');
+        $('.prev').css('padding-bottom', ((sHeight - 50) / 2) - 17.92 + 'px');
+        $('.next').css('padding-top', ((sHeight - 50) / 2) + 17, 92 + 'px');
+        $('.next').css('padding-bottom', ((sHeight - 50) / 2) - 17.92 + 'px');
     </script>
 
     <div class="navbar">
@@ -152,6 +169,4 @@
             <a class="extra" id="con" style="cursor: pointer" onclick="javascript: window.location = 'contact.html';">contact</a>
         </div>
     </div>
-</body>
-
-</html>
+</body></html>
