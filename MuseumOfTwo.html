@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
+    <title>Marcel Wachala — Portfolio</title>
+    <link rel="icon" type="image/png" href="img/icons/squareLogo.png">
+    <link rel="stylesheet" href="css/style4.css" />
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/MOT.js"></script>
+    <script type="text/javascript" src="js/height.js"></script>
+    
+</head>
+
+<body>
+    <div class="Container">
+        <div class="mySlides">
+            <div class="subContainer">
+                <img src="img/mot/A01.jpg" title="Exterior Collage" alt="missing picture" class="Picture">
+            </div>
+        </div>
+        <div class="mySlides">
+            <div class="subContainer">
+                <div id="info">
+                    <div id="list">
+                        <h1>
+                            Dimension — 4574 m2 <br>
+                            Location — Lichtfabriekplein, 2031 TE Haarlem, the Netherlands<br>
+                            Typology — Cultural<br>
+                            Elaboration — 1st Master‘s Semester (2020)<br>
+                            Group Members — /<br>
+
+                        </h1>
+                    </div>
+                    <div id="text">
+                        <p>
+                            The Museum Of Two [MOT] is situated at the border of two districts: a recent residential neighborhood and a former industrial area which the city of Haarlem is planning to transform. The municipality wants the district to become mixed in use whereas the industry moves further east. However, the area lacks of public space due to its‘ in- dustrial history. While the residential neighborhood was developed with some semi-private squares for the direct neighbors, a mixed district needs facilities for a wider public.<br>
+                            As a pilot project for the new usage, the MOT is designed as a park with small pavilions. Their shape is formed by the potential movement of people entering the plot. The curves create a pulling effect on the park for neighbors and visitors.<br>
+                            The pavilions are connected underground to maintain the open park. This basement contains the two exhibition spaces which are connected to the environment with sky- lights through the pavilion volumes. The exhibition itself has a focus on Dutch sculptors of the 20th century and contemporary artists that are invited to live and work wit- hin the museum. After selecting and placing the artworks, the curves were redefined and set to their final form. <br><br>
+                            Two brickwork buildings of a former power station are situated on the plot. Whereas one of the buildings is in good condition and therefore integrated into the design, the other one is falling apart. Several other ruins surround the plot. Considering these resources I researched
+                            brick reuse and on the methodology of Gamle Mursten; a company that focuses on brick reuse. The brickwork can be demolished with common methods but has to be dispatched quickly to avoid damages from the const- ruction site. For further processing, the brick is cleaned mechanically and tested commonly on stability. In that way, the reused brick saves 95% of manufacturing energy. Therefore, in Combination with the other resources from surrounding ruins, the materialization of the MOT consists mainly of brick and glass.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mySlides">
+            <div class="subContainer">
+                <img src="img/mot/A02.png" title="Surrounding" alt="missing picture" class="Picture" />
+            </div>
+        </div>
+        <div class="mySlides">
+            <div class="subContainer">
+                <img src="img/mot/A03.gif" title="Context" alt="missing picture" class="Picture" />
+            </div>
+        </div>
+        <div class="mySlides">
+            <div class="subContainer">
+                <img src="img/mot/C04_E.png" title="ConceptA" alt="missing picture" class="Picture" />
+            </div>
+        </div>
+        <div class="mySlides">
+            <div class="subContainer">
+                <img src="img/mot/C05.jpg" title="ConceptB" alt="missing picture" class="Picture" />
+            </div>
+        </div>
+        <div class="mySlides">
+            <div class="subContainer">
+                <img src="img/mot/C06.png" title="Derivation" alt="missing picture" class="Picture" />
+            </div>
+        </div>
+        <div class="mySlides">
+            <div class="subContainer">
+                <img src="img/mot/C07.png" title="Groundfloor" alt="missing picture" class="Picture" />
+            </div>
+        </div>
+        <div class="mySlides">
+            <div class="subContainer">
+                <img src="img/mot/C08.png" title="1st Floor" alt="missing picture" class="Picture" />
+            </div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">
+            <img class="arrowL" src="img/icons/arrow_left2.png">
+        </a>
+        <a class="next" onclick="plusSlides(1)">
+            <img class="arrowR" src="img/icons/arrow_right2.png">
+        </a>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+    </div>
+
+    <script>
+        var slideIndex = 1; // index points to the slide shown 
+        showSlides(slideIndex); // show the first slide
+
+        function plusSlides(n) { // show the next/prev slide
+            showSlides(slideIndex += n); //also change var slideIndex
+        }
+
+        function currentSlide(n) { // show the slide with index=n
+            showSlides(slideIndex = n); //also change var slideIndex
+        }
+
+        function showSlides(n) { // show the slide with index=n  
+            var i; //counter for the loops 
+            var slides = document.getElementsByClassName("mySlides"); //get all the myslides
+            var dots = document.getElementsByClassName("dot"); //get all the dot elements
+            if (n > slides.length) { // if n is more than the number of slides
+                slideIndex = 1; //change var slideIndex to point to the first slide
+            }
+            if (n < 1) { // if n is less than 1
+                slideIndex = slides.length; //change var slideIndex to point to the last slide
+            }
+            for (i = 0; i < slides.length; i++) { // hide all slides
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block"; //show the correct slide
+            dots[slideIndex - 1].className += " active"; //apply class active to the correct dot
+        }
+
+    </script>
+
+    <div class="navbar">
+        <a style="cursor: pointer" onclick="javascript: window.location = 'index.html';" id="logo"><img src="img/icons/logoR.png" alt="missing picture" /></a>
+        <div class="dropup">
+            <button class="dropbtn">Project</button>
+            <div class="dropup-content">
+                <a id="01" style="cursor: pointer" onclick="javascript: window.location = 'InfozentraleAufDemVollgut.html';">01</a>
+                <a id="02" style="cursor: pointer" onclick="javascript: window.location = 'SuperSalon36.html';">02</a>
+                <a id="03" style="cursor: pointer" onclick="javascript: window.location = 'MuseumOfTwo.html';">03</a>
+                <a id="04" style="cursor: pointer" onclick="javascript: window.location = 'DriveInLiving.html';">04</a>
+            </div>
+        </div>
+        <div class="titles">
+            <span id="slash"><img src="img/icons/slash.png" alt="missing picture" /></span>
+            <span id="MW">M<wbr>a<wbr>r<wbr>c<wbr>e<wbr>l W<wbr>a<wbr>c<wbr>h<wbr>a<wbr>l<wbr>a<wbr> <wbr></span>
+            <span id="INZE">I<wbr>n<wbr>f<wbr>o<wbr>z<wbr>e<wbr>n<wbr>t<wbr>r<wbr>a<wbr>l<wbr>e a<wbr>u<wbr>f d<wbr>e<wbr>m V<wbr>o<wbr>l<wbr>l<wbr>g<wbr>u<wbr>t<wbr> <wbr></span>
+            <span id="SUSA">S<wbr>u<wbr>p<wbr>e<wbr>r S<wbr>a<wbr>l<wbr>o<wbr>n 3<wbr>6<wbr> <wbr></span>
+            <span id="MOT">M<wbr>u<wbr>s<wbr>e<wbr>u<wbr>m o<wbr>f T<wbr>w<wbr>o<wbr> <wbr></span>
+            <span id="DIL">D<wbr>r<wbr>i<wbr>v<wbr>e I<wbr>n, L<wbr>i<wbr>v<wbr>i<wbr>n<wbr>g<wbr> <wbr></span>
+        </div>
+        <div class="right">
+            <a class="extra" style="cursor: pointer" onclick="javascript: window.location = '#home';">de</a>
+            <a class="extra" id="con" style="cursor: pointer" onclick="javascript: window.location = 'contact.html';">contact</a>
+        </div>
+    </div>
+</body>
+
+</html>

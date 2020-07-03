@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
+    <title>Marcel Wachala — Portfolio</title>
+    <link rel="icon" type="image/png" href="img/icons/squareLogo.png">
+    <link rel="stylesheet" href="css/style2.css" />
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/INZE.js"></script>
+    <script type="text/javascript" src="js/height.js"></script>
+
+</head>
+
+<body>
+    <div class="Container">
+        <div class="mySlides">
+            <div class="subContainer">
+                <img src="img/inze/A01.jpg" alt="missing picture" class="Picture">
+            </div>
+        </div>
+        <div class="mySlides">
+            <div class="subContainer">
+                <div id="info">
+                    <div id="list">
+                        <h1>
+                            Dimension — 32 m2 <br>
+                            Location — Am Sudhaus 3, 12053 Berlin, Germany <br>
+                            Typology — Cultural <br>
+                            Elaboration — 5th Bachelor‘s Semester (2018) <br>
+                            Group Members — Natural Building Lab <br>
+                            Honors — HolzBau Plus &#040;special award&#041;	, Hochschulpreis Holzbau &#040;special award&#041;,<br> Deutscher Holzbaupreis &#040;acknowledgment&#041;, Berliner Holzbaupreis &#040;concept award&#041;
+                        </h1>
+                    </div>
+                    <div id="text">
+                        <p>
+                            On the area of the Kindl Brewery in Berlin Neukölln, sundry construction
+                            projects are planned and will be realized
+                            in the next few years. As a part of one site, we started
+                            our project and positioned it on top of the former, vacant
+                            basement of the brewery.<br>
+
+                            The Design-Built was developed within a semester‘s seminar with 36 students,
+                            who dealt with topics of sustainability, circularity, and recycling in the construction industry.
+                            The aim was to plan a flexible, temporary building and to
+                            realize it afterward.<br><br>
+
+                            A ‚space for everyone‘ which can be used by the social
+                            organizations around the area for events, meetings, and
+                            workshops with the neighbors had to be designed. The
+                            main focus while the planning process was on the decision of the
+                            material and construction to ensure the realizability with simple
+                            methods, the usage of recycled and
+                            sustainable materials and the free floorplan.<br>
+
+                            A rectangular construction with a terrace resulted. That
+                            terrace is covered by a wooden roof which is designed
+                            as a spatial frame structure with multiple overlaid beam
+                            layers. The roof membrane is divided into a surrounding
+                            transparent overhang and the inner insulated surface.
+                            The whole construction is carried by four columns which
+                            transfer the concentrated loads through a fixation to the
+                            basement ceiling. The insulated cardboard- and paper-
+                            manufactured walls tension the interior between these four columns.
+                            This interior space is surrounded by niches which provide different
+                            uses and enable various activities inside one room.<br><br>
+
+                            <a style="color:black" href="www.infozetrale.de">www.infozentrale.berlin</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mySlides">
+            <div class="subContainer">
+                <img src="img/inze/A02.png" alt="missing picture" class="Picture" />
+            </div>
+        </div>
+        <div class="mySlides">
+            <div class="subContainer">
+                <img src="img/inze/A03.jpg" alt="missing picture" class="Picture" />
+            </div>
+        </div>
+        <div class="mySlides">
+            <div class="subContainer">
+                <img src="img/inze/A04_i.png" alt="missing picture" class="Picture" />
+            </div>
+        </div>
+        <div class="mySlides">
+            <div class="subContainer">
+                <img src="img/inze/A06_1.jpg" alt="missing picture" class="Picture" />
+            </div>
+        </div>
+        <div class="mySlides">
+            <div class="subContainer">
+                <img src="img/inze/A06_2.jpg" alt="missing picture" class="Picture" />
+            </div>
+        </div>
+        <div class="mySlides">
+            <div class="subContainer">
+                <img src="img/inze/A06_3.jpg" alt="missing picture" class="Picture" />
+            </div>
+        </div>
+        <div class="mySlides">
+            <div class="subContainer">
+                <img src="img/inze/A07_i.png" alt="missing picture" class="Picture" />
+            </div>
+        </div>
+        <div class="mySlides">
+            <div class="subContainer">
+                <img src="img/inze/A08.jpg" alt="missing picture" class="Picture" />
+            </div>
+        </div>
+        <div class="mySlides">
+            <div class="subContainer">
+                <img src="img/inze/A09.jpg" alt="missing picture" class="Picture" />
+            </div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">
+            <img class="arrowL" src="img/icons/arrow_left2.png">
+        </a>
+        <a class="next" onclick="plusSlides(1)">
+            <img class="arrowR" src="img/icons/arrow_right2.png">
+        </a>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+    </div>
+
+    <script>
+        var slideIndex = 1; // index points to the slide shown 
+        showSlides(slideIndex); // show the first slide
+
+        function plusSlides(n) { // show the next/prev slide
+            showSlides(slideIndex += n); //also change var slideIndex
+        }
+
+        function currentSlide(n) { // show the slide with index=n
+            showSlides(slideIndex = n); //also change var slideIndex
+        }
+
+        function showSlides(n) { // show the slide with index=n  
+            var i; //counter for the loops 
+            var slides = document.getElementsByClassName("mySlides"); //get all the myslides
+            var dots = document.getElementsByClassName("dot"); //get all the dot elements
+            if (n > slides.length) { // if n is more than the number of slides
+                slideIndex = 1; //change var slideIndex to point to the first slide
+            }
+            if (n < 1) { // if n is less than 1
+                slideIndex = slides.length; //change var slideIndex to point to the last slide
+            }
+            for (i = 0; i < slides.length; i++) { // hide all slides
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block"; //show the correct slide
+            dots[slideIndex - 1].className += " active"; //apply class active to the correct dot
+        }
+
+    </script>
+
+    <div class="navbar">
+        <a style="cursor: pointer" onclick="javascript: window.location = 'index.html';" id="logo"><img src="img/icons/logoR.png" alt="missing picture" /></a>
+        <div class="dropup">
+            <button class="dropbtn">Project</button>
+            <div class="dropup-content">
+                <a id="01" style="cursor: pointer" onclick="javascript: window.location = 'InfozentraleAufDemVollgut.html';">01</a>
+                <a id="02" style="cursor: pointer" onclick="javascript: window.location = 'SuperSalon36.html';">02</a>
+                <a id="03" style="cursor: pointer" onclick="javascript: window.location = 'MuseumOfTwo.html';">03</a>
+                <a id="04" style="cursor: pointer" onclick="javascript: window.location = 'DriveInLiving.html';">04</a>
+            </div>
+        </div>
+        <div class="titles">
+            <span id="slash"><img src="img/icons/slash.png" alt="missing picture" /></span>
+            <span id="MW">M<wbr>a<wbr>r<wbr>c<wbr>e<wbr>l W<wbr>a<wbr>c<wbr>h<wbr>a<wbr>l<wbr>a<wbr> <wbr></span>
+            <span id="INZE">I<wbr>n<wbr>f<wbr>o<wbr>z<wbr>e<wbr>n<wbr>t<wbr>r<wbr>a<wbr>l<wbr>e a<wbr>u<wbr>f d<wbr>e<wbr>m V<wbr>o<wbr>l<wbr>l<wbr>g<wbr>u<wbr>t<wbr> <wbr></span>
+            <span id="SUSA">S<wbr>u<wbr>p<wbr>e<wbr>r S<wbr>a<wbr>l<wbr>o<wbr>n 3<wbr>6<wbr> <wbr></span>
+            <span id="MOT">M<wbr>u<wbr>s<wbr>e<wbr>u<wbr>m o<wbr>f T<wbr>w<wbr>o<wbr> <wbr></span>
+            <span id="DIL">D<wbr>r<wbr>i<wbr>v<wbr>e I<wbr>n, L<wbr>i<wbr>v<wbr>i<wbr>n<wbr>g<wbr> <wbr></span>
+        </div>
+        <div class="right">
+            <a class="extra" style="cursor: pointer" onclick="javascript: window.location = '#home';">de</a>
+            <a class="extra" id="con" style="cursor: pointer" onclick="javascript: window.location = 'contact.html';">contact</a>
+        </div>
+    </div>
+</body>
+
+</html>

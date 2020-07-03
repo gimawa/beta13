@@ -1,0 +1,333 @@
+/* BASE SETTINGS */
+body {
+    margin: 0;
+    height: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+::-moz-selection {
+    color: #1898f8;
+    background: transparent;
+    text-shadow: none;
+}
+
+::selection {
+    color: #1898f8;
+    background: transparent;
+    text-shadow: none;
+}
+
+@font-face {
+    font-family: HKGroteskRegular;
+    src: url("../fonts/hkgrotesk-regular-webfont.woff2") format("woff2"),
+        url("fonts/hkgrotesk-regular-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: HKGroteskLight;
+    src: url("../fonts/hkgrotesk-light-webfont.woff2") format("woff2"),
+        url("fonts/hkgrotesk-light-webfont.woff") format("woff");
+}
+
+/* NAVBAR */
+
+p a {
+    color: black;
+    text-decoration: none;
+}
+
+p a:hover {
+    color: red;
+    text-decoration: none;
+}
+
+p {
+    font-family: HKGroteskRegular;
+}
+
+.navbar {
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    left: 14px;
+    width: calc(100% - 28px);
+}
+
+#logo {
+    display: inline;
+    background-color: transparent;
+    padding: 14px;
+    padding-left: 0px;
+}
+
+#logo img {
+    height: 17px;
+}
+
+.dropup {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: black;
+    padding: 14px;
+    font-size: 21px;
+    font-family: HKGroteskLight;
+    border: none;
+}
+
+.dropup-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 92.86px;
+    bottom: 53px;
+    z-index: 1;
+}
+
+.dropup-content a {
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: 21px;
+    font-family: HKGroteskLight;
+}
+
+.titles {
+    color: black;
+    display: inline;
+    hyphens: manual;
+    padding-left: 14px;
+    font-size: 21px;
+    font-family: HKGroteskLight;
+    line-height: 53px;
+}
+
+.right {
+    display: inline;
+    float: right;
+    padding-top: 23px;
+    padding-bottom: 16px;
+}
+
+.extra {
+    padding: 16px;
+    padding-right: 0px;
+    font-size: 13px;
+    font-family: HKGroteskRegular;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+#slash img {
+    height: 16.5px;
+}
+
+#slash {
+    padding-right: 25px;
+    display: inline;
+}
+
+#PH {
+    padding-left: 47.5px;
+    background: transparent;
+    color: transparent;
+    display: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#PH::-moz-selection #PH {
+    color: transparent;
+    background: transparent;
+    text-shadow: none;
+}
+
+#PH::selection {
+    color: transparent;
+    background: transparent;
+    text-shadow: none;
+}
+
+#MW {
+    display: none;
+    padding-right: 114.98px;
+}
+
+#INZE {
+    display: none;
+}
+
+#SUSA {
+    display: inline;
+    padding-right: 125px;
+}
+
+#MOT {
+    display: none;
+    padding-right: 116.01px;
+}
+
+#DIL {
+    display: none;
+    padding-right: 127.56px;
+}
+
+.dropup-content a:hover {
+    color: #ff0000;
+}
+
+.dropup:hover .dropup-content {
+    display: block;
+}
+
+.extra:hover {
+    color: #ff0000;
+}
+
+/* SLIDER */
+
+h1 {
+    font-family: HKGroteskLight;
+    font-weight: normal;
+    font-size: 21px;
+}
+
+#info {
+    /* max-width: calc(100% - 71.68px); */
+    width: 80%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+#list {
+    display: block;
+    max-width: 1000px;
+    float: left;
+}
+
+#text {
+    display: block;
+    max-width: 1000px;
+    margin-top: 80px;
+    padding-bottom: 116px;
+    float: right;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* SLIDER CONTAINS */
+
+.Container {
+    width: 100%;
+    height: 100vh;
+}
+
+.mySlides {
+    display: none;
+}
+
+.subContainer {
+    position: absolute;
+    width: 100%;
+    top: 35.84px;
+}
+
+.Picture {
+    max-height: 100%;
+    max-width: calc(100% - 71.68px);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Next Button */
+
+.arrowL {
+    height: 20px;
+    margin: 12px;
+    opacity: 0%;
+}
+
+.arrowR {
+    height: 20px;
+    margin: 12px;
+    opacity: 0%;
+}
+
+.next {
+    cursor: url("../img/icons/arrow_right.png") 2 2, auto;
+    position: absolute;
+    right: 0;
+    width: auto;
+    padding-left: 50%;
+}
+
+/* Prev Button */
+
+.prev {
+    cursor: url("../img/icons/arrow_left.png"), auto;
+    position: absolute;
+    width: auto;
+    padding-right: 50%;
+}
+
+@media (hover: none) {
+    .arrowL {
+        opacity: 100%;
+    }
+
+    .arrowR {
+        opacity: 100%;
+    }
+
+    .next {
+        cursor: pointer;
+    }
+
+    .prev {
+        cursor: pointer;
+    }
+}
+
+.skipper {
+    position: absolute;
+    top:23px;
+    right: 0;
+    transform: rotate(-90deg) translate(-28.32px, +28.32px);
+    font-family: HKGroteskRegular;
+    font-size: 13px;
+    padding: 12px;
+}
+
+.skipper:hover{
+    color:red;
+}
+
+/* Play Button */
+
+#vidbutton {
+    cursor: url("../img/icons/pause.png"), auto;
+    position: absolute;
+    width: auto;
+    padding-right: 33%;
+    left: 33%;
+    color: transparent;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    z-index: 1;
+}
