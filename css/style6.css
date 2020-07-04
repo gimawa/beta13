@@ -223,7 +223,7 @@ h1 {
     margin-right: 10%;
     margin-left: 10%;
     max-width: 1000px;
-    margin-top: 80px;
+    margin-top: 15px;
     padding-bottom: 116px;
     float: right;
 }
@@ -339,5 +339,17 @@ h1 {
     
     #list {
         margin-top: 150px;
+    }
+}
+
+@media only screen and (max-width: 485px) {
+    #me {
+        position: absolute;
+        left: calc(100% - 230px);
+        top:0px;
+    }
+    
+    #list {
+        margin-top: 240px;
     }
 }
