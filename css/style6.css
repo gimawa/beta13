@@ -333,23 +333,11 @@ h1 {
 @media only screen and (max-width: 665px) {
     #me {
         position: absolute;
-        left: calc(100% - 150px);
+        left: calc(100% - 280px);
         top:0px;
     }
     
     #list {
-        margin-top: 150px;
-    }
-}
-
-@media only screen and (max-width: 485px) {
-    #me {
-        position: absolute;
-        left: calc(100% - 230px);
-        top:0px;
-    }
-    
-    #list {
-        margin-top: 240px;
+        margin-top: 250px;
     }
 }
