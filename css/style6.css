@@ -210,7 +210,7 @@ h1 {
 }
 
 #list {
-    margin-left: 10%;
+    margin-right: 10%;
     margin-left: 10%;
     margin-top: 0px;
     display: block;
@@ -322,18 +322,18 @@ h1 {
 }
 
 #me {
-    display: block;
+    display: inline-block;
     position: relative;
     top: -110px;
     z-index: -1;
-    left: -30px;
+    left: -11.9%;
     width: 250px;
 }
 
-@media only screen and (max-width: 665px) {
+@media only screen and (max-width: 750px) {
     #me {
         position: absolute;
-        left: calc(100% - 280px);
+        left: calc(100% - 260px);
         top:0px;
     }
     
