@@ -210,7 +210,6 @@ h1 {
 }
 
 #list {
-    margin-right: 10%;
     margin-left: 10%;
     margin-top: 0px;
     display: block;
@@ -326,11 +325,11 @@ h1 {
     position: relative;
     top: -110px;
     z-index: -1;
-    left: -11.9%;
+    left: -35px;
     width: 250px;
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 665px) {
     #me {
         position: absolute;
         left: calc(100% - 260px);
@@ -339,5 +338,6 @@ h1 {
     
     #list {
         margin-top: 250px;
+        margin-right: 10%;
     }
 }
