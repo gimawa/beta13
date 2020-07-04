@@ -32,4 +32,13 @@ $(document).ready(function () {
         $("#MW").css("display", "none");
         $("#INZE").css("display", "inline");
     });
+
+    $(".skipper").mouseover(function () {
+        $("#INZE").css("display", "none");
+        $("#SUSA").css("display", "inline");
+    });
+    $(".skipper").mouseleave(function () {
+        $("#SUSA").css("display", "none");
+        $("#INZE").css("display", "inline");
+    });
 });
