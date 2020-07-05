@@ -6,7 +6,7 @@
 
                 $('#vidbutton').css('padding-top', ((sHeight - 2) / 2) + 'px');
                 $('#vidbutton').css('padding-bottom', ((sHeight - 2) / 2) + 'px');
-            }, 10);
+            }, 200);
         });
 
         $(window).resize(function () {
@@ -17,7 +17,7 @@
 
                 $('#vidbutton').css('padding-top', ((sHeight - 2) / 2) + 'px');
                 $('#vidbutton').css('padding-bottom', ((sHeight - 2) / 2) + 'px');
-            }, 10);
+            }, 200);
         });
 
         $(window).on("orientationchange", function () {
@@ -28,5 +28,5 @@
 
                 $('#vidbutton').css('padding-top', ((sHeight - 2) / 2) + 'px');
                 $('#vidbutton').css('padding-bottom', ((sHeight - 2) / 2) + 'px');
-            }, 10);
+            }, 200);
         });
