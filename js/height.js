@@ -11,7 +11,7 @@
                 $('.prev').css('padding-bottom', ((sHeight - 50) / 2) - 17.92 + 'px');
                 $('.next').css('padding-top', ((sHeight - 50) / 2) + 17, 92 + 'px');
                 $('.next').css('padding-bottom', ((sHeight - 50) / 2) - 17.92 + 'px');
-            }, 200);
+            }, 10);
         });
 
         $(window).resize(function () {
@@ -27,7 +27,7 @@
                 $('.prev').css('padding-bottom', ((sHeight - 50) / 2) - 17.92 + 'px');
                 $('.next').css('padding-top', ((sHeight - 50) / 2) + 17, 92 + 'px');
                 $('.next').css('padding-bottom', ((sHeight - 50) / 2) - 17.92 + 'px');
-            }, 200);
+            }, 10);
         });
 
         $(window).on("orientationchange", function () {
@@ -43,5 +43,5 @@
                 $('.prev').css('padding-bottom', ((sHeight - 50) / 2) - 17.92 + 'px');
                 $('.next').css('padding-top', ((sHeight - 50) / 2) + 17, 92 + 'px');
                 $('.next').css('padding-bottom', ((sHeight - 50) / 2) - 17.92 + 'px');
-            }, 200);
+            }, 10);
         });
