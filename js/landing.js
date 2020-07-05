@@ -1,9 +1,9 @@
 $(document).ready(function () {
-    $(".dropup-content a, img").mouseover(function () { // Hover DropupContent =Show Title
+    $(".dropup-content a, #L_INZE, #L_SUSA, #L_MOT, #L_DIL, #L_MIW").mouseover(function () { // Hover DropupContent =Show Title
         $("#PH").css("display", "none");
         $("#slash").css("display", "inline");
     });
-    $(".dropup-content a, img").mouseleave(function () {
+    $(".dropup-content a, #L_INZE, #L_SUSA, #L_MOT, #L_DIL, #L_MIW").mouseleave(function () {
         $("#PH").css("display", "inline");
         $("#slash").css("display", "none");
     });
