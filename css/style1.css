@@ -31,10 +31,86 @@ body {
 
 /* ANIMATION */
 
-.Container {
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+#Container {
+    margin: 0;
+    overflow: hidden;
+}
+
+#L_INZE {
     position: absolute;
-    height: 100vh;
-    width: 100%;
+    left: 20%;
+    top: 10%;
+    width: 200px;
+    height: 135.41px;
+    z-index: -1;
+}
+
+#L_SUSA {
+    position: absolute;
+    left: calc(90% - 200px);
+    top: 20%;
+    width: 200px;
+    height: 163.6px;
+    z-index: -1;
+}
+
+#L_MOT {
+    position: absolute;
+    left: 10%;
+    top: calc(80% - 150px);
+    width: 166.3px;
+    height: 150px;
+    z-index: -1;
+}
+
+#L_DIL {
+    position: absolute;
+    left: calc(80% - 200px);
+    top: calc(90% - 124.72px);
+    width: 200px;
+    height: 124.72px;
+    z-index: -1;
+}
+
+#L_MW {
+    position: absolute;
+    left: calc(50% - 103.25px);
+    top: calc(55% - 150px);
+    width: 103.25px;
+    height: 150px;
+    z-index: -1;
+}
+
+@media only screen and (max-width: 0700px) {
+    #L_INZE {
+        width: 133.3px;
+        height: 90.27px;
+    }
+
+    #L_SUSA {
+        width: 133.3px;
+        height: 109.07px;
+    }
+
+    #L_MOT {
+        width: 110.87px;
+        height: 100px;
+    }
+
+    #L_DIL {
+        width: 133.3px;
+        height: 83.15px;
+    }
+
+    #L_MW {
+        width: 68.83px;
+        height: 100px;
+    }
 }
 
 /* NAVBAR */
@@ -200,38 +276,4 @@ p {
 
 .extra:hover {
     color: #ff0000;
-}
-
-/* SLIDER */
-
-h1 {
-    font-family: HKGroteskLight;
-    font-weight: normal;
-    font-size: 21px;
-}
-
-#info {
-    /* max-width: calc(100% - 71.68px); */
-    width: 80%;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, 50%);
-}
-
-#list {
-    display: block;
-    max-width: 1000px;
-    float: left;
-}
-
-#text {
-    display: block;
-    max-width: 1000px;
-    margin-top: 80px;
-    padding-bottom: 116px;
-    float: right;
-}
-
-* {
-    box-sizing: border-box;
 }
