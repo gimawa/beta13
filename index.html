@@ -6,72 +6,27 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
     <title>Marcel Wachala — Portfolio</title>
     <link rel="icon" type="image/png" href="img/icons/squareLogo.png">
-    <link rel="stylesheet" href="css/style1.css" />
+    <link rel="stylesheet" href="css/style0.css" />
     <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-    <script type="text/javascript" src="js/animation.js"></script>
-    <script type="text/javascript" src="js/hoverdropup.js"></script>
+    <script type="text/javascript" src="js/landing.js"></script>
 </head>
 
 <body>
-    <div class="Container">
-        <marquee id="m1_susa" direction="up" width="100%" height="100%" behavior="alternate" scrollamount="12">
-            <marquee id="m2_susa" direction="left" behavior="alternate" scrollamount="10">
-                <div id="l_susa" Style="width:200px;" onMouseOver="document.getElementById('m1_susa').stop();document.getElementById('m2_susa').stop()" onMouseOut="document.getElementById('m1_susa').start();document.getElementById('m2_susa').start()">
-                    <a style="cursor: pointer" onclick="javascript: window.location = 'SuperSalon36.html';">
-                        <img src="img/logos/susa.png" alt="missing image" width=200px; />
-                    </a>
-                </div>
-            </marquee>
-        </marquee>
-    </div>
-
-    <div class="Container">
-        <marquee id="m1_inze" direction="up" width="100%" height="100%" behavior="alternate" scrollamount="10">
-            <marquee id="m2_inze" direction="right" behavior="alternate" scrollamount="12">
-                <div id="l_inze" Style="width:200px;" onMouseOver="document.getElementById('m1_inze').stop();document.getElementById('m2_inze').stop()" onMouseOut="document.getElementById('m1_inze').start();document.getElementById('m2_inze').start()">
-                    <a style="cursor: pointer" onclick="javascript: window.location = 'InfozentraleAufDemVollgut.html';">
-                        <img src="img/logos/inze.png" alt="missing image" width=200px; />
-                    </a>
-                </div>
-            </marquee>
-        </marquee>
-    </div>
-    
-        <div class="Container">
-        <marquee id="m1_dil" direction="down" width="100%" height="100%" behavior="alternate" scrollamount="12">
-            <marquee id="m2_dil" direction="left" behavior="alternate" scrollamount="8">
-                <div id="l_dil" Style="width:200px;" onMouseOver="document.getElementById('m1_dil').stop();document.getElementById('m2_dil').stop()" onMouseOut="document.getElementById('m1_dil').start();document.getElementById('m2_dil').start()">
-                    <a style="cursor: pointer" onclick="javascript: window.location = 'DriveInLiving.html';">
-                        <img src="img/logos/dil.png" alt="missing image" width=200px; />
-                    </a>
-                </div>
-            </marquee>
-        </marquee>
-    </div>
-    
-            <div class="Container" style="width=200px;">
-        <marquee id="m1_dil" direction="down" width="100%" height="100%" behavior="alternate" scrollamount="10">
-            <marquee id="m2_dil" direction="left" behavior="alternate" scrollamount="12">
-                <div id="l_dil" Style="width:200px;" onMouseOver="document.getElementById('m1_dil').stop();document.getElementById('m2_dil').stop()" onMouseOut="document.getElementById('m1_dil').start();document.getElementById('m2_dil').start()">
-                    <a style="cursor: pointer" onclick="javascript: window.location = 'DriveInLiving.html';">
-                        <img src="img/logos/me.png" alt="missing image" height=160px; />
-                    </a>
-                </div>
-            </marquee>
-        </marquee>
-    </div>
-
-    <div class="Container">
-        <marquee id="m1_mot" direction="down" width="100%" height="100%" behavior="alternate" scrollamount="15">
-            <marquee id="m2_mot" direction="right" behavior="alternate" scrollamount="10">
-                <div id="l_mot" Style="width:200px;" onMouseOver="document.getElementById('m1_mot').stop();document.getElementById('m2_mot').stop()" onMouseOut="document.getElementById('m1_mot').start();document.getElementById('m2_mot').start()">
-                    <a style="cursor: pointer" onclick="javascript: window.location = 'MuseumOfTwo.html';">
-                        <img src="img/logos/mot.png" alt="missing image" height=135px; />
-                    </a>
-                </div>
-            </marquee>
-        </marquee>
-    </div>
+    <a style="cursor: pointer" onclick="javascript: window.location = 'InfozentraleAufDemVollgut.html';">
+        <img id="L_INZE" src="img/logos/inze.png" />
+    </a>
+    <a style="cursor: pointer" onclick="javascript: window.location = 'SuperSalon36.html';">
+        <img id="L_SUSA" src="img/logos/susa.png" />
+    </a>
+    <a style="cursor: pointer" onclick="javascript: window.location = 'MuseumOfTwo.html';">
+        <img id="L_MOT" src="img/logos/mot.png" />
+    </a>
+    <a style="cursor: pointer" onclick="javascript: window.location = 'DriveInLiving.html';">
+        <img id="L_DIL" src="img/logos/dil.png" />
+    </a>
+    <a style="cursor: pointer" onclick="javascript: window.location = 'contact.html';">
+        <img id="L_MW" src="img/logos/me.png" />
+    </a>
 
     <div class="navbar">
         <a style="cursor: pointer" onclick="javascript: window.location = 'index.html';" id="logo"><img src="img/icons/logoR.png" alt="missing picture" /></a>
@@ -98,6 +53,7 @@
             <a class="extra" id="con" style="cursor: pointer" onclick="javascript: window.location = 'contact.html';">contact</a>
         </div>
     </div>
+    <script src="js/Bounce.js"></script>
 </body>
 
 </html>

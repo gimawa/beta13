@@ -37,19 +37,19 @@ $(document).ready(function () {
     });
     
     
-    $("#con").mouseover(function () { // Hover DropupContent =Show Title
+    $("#con").mouseover(function () {
         $("#PH").css("display", "none");
     });
     $("#con").mouseleave(function () {
         $("#PH").css("display", "inline");
     });
-    $("#con").mouseover(function () { // Hover DropupContent =Show Title
+    $("#con").mouseover(function () {
         $("#slash").css("display", "inline");
     });
     $("#con").mouseleave(function () {
         $("#slash").css("display", "none");
     });
-    $("#con").mouseover(function () { // Hover DropupContent =Show Title
+    $("#con").mouseover(function () {
         $("#MW").css("display", "inline");
     });
     $("#con").mouseleave(function () {
