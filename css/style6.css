@@ -329,7 +329,7 @@ h1 {
     width: 250px;
 }
 
-@media only screen and (max-width: 665px) {
+@media only screen and (max-width: 700px) {
     #me {
         position: absolute;
         left: calc(100% - 260px);
