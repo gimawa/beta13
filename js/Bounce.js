@@ -1,7 +1,7 @@
 var winHeight = $(window).height();
 var winWidth = $(window).width();
 var yMove = -1;
-var xMove = 2;
+var xMove = -2;
 var timer;
 var yMove1 = -1;
 var xMove1 = 2;
