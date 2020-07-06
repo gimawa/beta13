@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
+    <title>Marcel Wachala — Portfolio</title>
+    <link rel="icon" type="image/png" href="img/icons/squareLogo.png">
+    <link rel="stylesheet" href="css/style4.css" />
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/MOT.js"></script>
+    <script type="text/javascript" src="js/height.js"></script>
+
+</head>
+
+<body>
+    <div class="Container">
+        <div class="mySlides">
+            <div class="subContainer">
+                <img src="img/mot/A01.jpg" title="Exterior Collage" alt="missing picture" class="Picture">
+            </div>
+        </div>
+        <div class="mySlides">
+            <div class="subContainer">
+                <div id="info">
+                    <div id="list">
+                        <h1>
+                            Dimension — 4574 m2 <br>
+                            Position — Lichtfabriekplein, 2031 TE Haarlem, the Netherlands<br>
+                            Typologie — Kultur<br>
+                            Ausarbeitung — 1. Master Semester (2020)<br>
+                            Gruppenmitglieder — /<br>
+
+                        </h1>
+                    </div>
+                    <div id="text">
+                        <p>
+                            Für einen gemeinnützigen Verein, der zusammen mit geflüchteten Menschen Kochkurse organisiert und anbietet, sollte ein Gebäude entworfen werden. Das Angebot des Vereins sollte dabei erweitert und einerseits um gemeinsames Werkeln und Gärtnern, andererseits um Büroräumlichkeiten und ein Café ergänzt werden.
+Die geringe Tiefe des an der Karl-Liebknecht-Straße/Torstraße gelegenen Grundstücks fordert einen Besonderen Umgang mit der Kubatur. Während ein zurückgesetztes Erdgeschoss das passieren von Menschen ermöglicht und gleichzeitig eine Eingangssituation für das Gebäude generiert, bieten die extrudierten Obergeschosse mehr Raum. <br>
+Das Innere wurde dabei als ein Raumkontinuum konzipiert, um einer Hierarchie entgegenzuwirken. Dabei dienen die Treppen sowohl der Verbindung von Räumen als auch dem Verstauen und Sitzen und erweitern die Ebenen somit. Dennoch können Kursräume bei Notwendigkeit durch Schiebewände isoliert werden.<br><br>
+Die Ebenen prägen maßgeblich den Versatz zwischen Erdgeschoss und Obergeschossen. Vereinzelte Öffnungen in einem perforiertem Stahlstoff orientieren sich an den Ebenen und generieren Blickbeziehungen in die Nachbarschaft. Die perforierte Oberfläche verstärkt zusätzlich den einheitlichen Charakter und das Gefühl des einzelnen großen Raums. Bei abendlichen Kursen und Veranstaltungen präsentieren sich hingegen die Betonstruktur und die Aktivitäten nach Außen.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mySlides">
+            <div class="subContainer">
+                <img src="img/mot/A02.png" title="Surrounding" alt="missing picture" class="Picture" />
+            </div>
+        </div>
+        <div class="mySlides">
+            <div class="subContainer">
+                <img src="img/mot/A03.gif" title="Context" alt="missing picture" class="Picture" />
+            </div>
+        </div>
+        <div class="mySlides">
+            <div class="subContainer">
+                <img src="img/mot/C04_E.png" title="ConceptA" alt="missing picture" class="Picture" />
+            </div>
+        </div>
+        <div class="mySlides">
+            <div class="subContainer">
+                <img src="img/mot/C05.jpg" title="ConceptB" alt="missing picture" class="Picture" />
+            </div>
+        </div>
+        <div class="mySlides">
+            <div class="subContainer">
+                <img src="img/mot/C06.png" title="Derivation" alt="missing picture" class="Picture" />
+            </div>
+        </div>
+        <div class="mySlides">
+            <div class="subContainer">
+                <img src="img/mot/C07.png" title="Groundfloor" alt="missing picture" class="Picture" />
+            </div>
+        </div>
+        <div class="mySlides">
+            <div class="subContainer">
+                <img src="img/mot/C08.png" title="1st Floor" alt="missing picture" class="Picture" />
+            </div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">
+            <img class="arrowL" src="img/icons/arrow_left2.png">
+        </a>
+        <a class="next" onclick="plusSlides(1)">
+            <img class="arrowR" src="img/icons/arrow_right2.png">
+        </a>
+
+        <a class="skipper" style="cursor: pointer" onclick="javascript: window.location ='DriveInLivingDE.html';">
+            näch. projekt
+        </a>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+    </div>
+
+    <script>
+        var slideIndex = 1; // index points to the slide shown 
+        showSlides(slideIndex); // show the first slide
+
+        function plusSlides(n) { // show the next/prev slide
+            showSlides(slideIndex += n); //also change var slideIndex
+        }
+
+        function currentSlide(n) { // show the slide with index=n
+            showSlides(slideIndex = n); //also change var slideIndex
+        }
+
+        function showSlides(n) { // show the slide with index=n  
+            var i; //counter for the loops 
+            var slides = document.getElementsByClassName("mySlides"); //get all the myslides
+            var dots = document.getElementsByClassName("dot"); //get all the dot elements
+            if (n > slides.length) { // if n is more than the number of slides
+                slideIndex = 1; //change var slideIndex to point to the first slide
+            }
+            if (n < 1) { // if n is less than 1
+                slideIndex = slides.length; //change var slideIndex to point to the last slide
+            }
+            for (i = 0; i < slides.length; i++) { // hide all slides
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block"; //show the correct slide
+            dots[slideIndex - 1].className += " active"; //apply class active to the correct dot
+        }
+    </script>
+
+    <script>
+        var winHeight = $(window).height();
+        var navHeight = $('.navbar').height();
+        var conHeight = $('body').height();
+        var sHeight = conHeight - navHeight;
+
+        $('.Container').css('height', winHeight + 'px');
+        $('.subContainer').css('height', sHeight - 35.84 + 'px');
+        $('.prev').css('padding-top', ((sHeight - 50) / 2) + 17.92 + 'px');
+        $('.prev').css('padding-bottom', ((sHeight - 50) / 2) - 17.92 + 'px');
+        $('.next').css('padding-top', ((sHeight - 50) / 2) + 17, 92 + 'px');
+        $('.next').css('padding-bottom', ((sHeight - 50) / 2) - 17.92 + 'px');
+    </script>
+
+    <div class="navbar">
+        <a style="cursor: pointer" onclick="javascript: window.location = 'indexDE.html';" id="logo"><img src="img/icons/logoR.png" alt="missing picture" /></a>
+        <div class="dropup">
+            <button class="dropbtn">Projekt</button>
+            <div class="dropup-content">
+                <a id="01" style="cursor: pointer" onclick="javascript: window.location = 'InfozentraleAufDemVollgutDE.html';">01</a>
+                <a id="02" style="cursor: pointer" onclick="javascript: window.location = 'SuperSalon36DE.html';">02</a>
+                <a id="03" style="cursor: pointer" onclick="javascript: window.location = 'MuseumOfTwoDE.html';">03</a>
+                <a id="04" style="cursor: pointer" onclick="javascript: window.location = 'DriveInLivingDE.html';">04</a>
+            </div>
+        </div>
+        <div class="titles">
+            <span id="slash"><img src="img/icons/slash.png" alt="missing picture" /></span>
+            <span id="MW">M<wbr>a<wbr>r<wbr>c<wbr>e<wbr>l W<wbr>a<wbr>c<wbr>h<wbr>a<wbr>l<wbr>a<wbr> <wbr></span>
+            <span id="INZE">I<wbr>n<wbr>f<wbr>o<wbr>z<wbr>e<wbr>n<wbr>t<wbr>r<wbr>a<wbr>l<wbr>e a<wbr>u<wbr>f d<wbr>e<wbr>m V<wbr>o<wbr>l<wbr>l<wbr>g<wbr>u<wbr>t<wbr> <wbr></span>
+            <span id="SUSA">S<wbr>u<wbr>p<wbr>e<wbr>r S<wbr>a<wbr>l<wbr>o<wbr>n 3<wbr>6<wbr> <wbr></span>
+            <span id="MOT">M<wbr>u<wbr>s<wbr>e<wbr>u<wbr>m o<wbr>f T<wbr>w<wbr>o<wbr> <wbr></span>
+            <span id="DIL">D<wbr>r<wbr>i<wbr>v<wbr>e I<wbr>n, L<wbr>i<wbr>v<wbr>i<wbr>n<wbr>g<wbr> <wbr></span>
+        </div>
+        <div class="right">
+            <a class="extra" style="cursor: pointer" onclick="javascript: window.location = 'MuseumOfTwo.html';">en</a>
+            <a class="extra" id="con" style="cursor: pointer" onclick="javascript: window.location = 'contactDE.html';">kontakt</a>
+        </div>
+    </div>
+</body></html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
+    <title>Marcel Wachala — Portfolio</title>
+    <link rel="icon" type="image/png" href="img/icons/squareLogo.png">
+    <link rel="stylesheet" href="css/style2.css" />
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/INZE.js"></script>
+    <script type="text/javascript" src="js/height.js"></script>
+
+</head>
+
+<body>
+    <div class="Container">
+        <div class="mySlides">
+            <div class="subContainer">
+                <img src="img/inze/A01.jpg" alt="missing picture" class="Picture">
+            </div>
+        </div>
+        <div class="mySlides">
+            <div class="subContainer">
+                <div id="info">
+                    <div id="list">
+                        <h1>
+                            Dimension — 32 m2 <br>
+                            Position — Am Sudhaus 3, 12053 Berlin, Germany <br>
+                            Typologie — Kultur <br>
+                            Ausarbeitung — 5. Bachelor Semester (2018) <br>
+                            Gruppenmitglieder — Natural Building Lab <br>
+                            Auszeichnungen — HolzBau Plus &#040;Spezialpreis&#041; , Hochschulpreis Holzbau &#040;Spezialpreis&#041;,<br> Deutscher Holzbaupreis &#040;Anerkennung&#041;, Berliner Holzbaupreis &#040;Konzeptpreis&#041;
+                        </h1>
+                    </div>
+                    <div id="text">
+                        <p>
+                            Das Baugrundstück befindet sich auf dem Gelände der
+                            Kindl-Brauerei in Berlin Neukölln. Auf der Fläche sind aktuell diverse Bauvorhaben in Planung und werden in den nächsten Jahren realisiert. Als Teil dieser Baustelle starten wir unser Projekt und positionieren uns auf dem ehemaligen, jetzt leer stehenden Keller der Brauerei.<br><br>
+                            Im Rahmen eines Semesterprojektes entstand ein Design-Build, bei dessen Entwicklung 36 Studierende sich mit Themen der Nachhaltigkeit, dem zirkulären Bauen und dem Recycling in der Bauindustrie auseinander gesetzt haben. Ziel war es, ein flexibel nutzbares, temporäres Gebäude auf dem Gelände der Kindl-Brauerei in Neukölln zu planen und zu realisieren.<br><br>
+                            Entstehen sollte ein „Raum für Alle“, der von den gemeinwohlorientierten Organisationen um das Areal für Veranstaltungen, Versammlungen und Workshops mit der Nachbarschaft genutzt werden kann. Ein großer Fokus lag bei der Planung auf der Materialwahl und der Tragstruktur, um die eigenen Maximen einer realisierbaren Konstruktion, der Nutzung wiederverwendeter Ressourcen und einem freinutzbaren Grundriss zu verwirklichen.<br><br>
+
+                            <a style="color:black" href="www.infozetrale.de">www.infozentrale.berlin</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mySlides">
+            <div class="subContainer">
+                <img src="img/inze/A02.png" alt="missing picture" class="Picture" />
+            </div>
+        </div>
+        <div class="mySlides">
+            <div class="subContainer">
+                <img src="img/inze/A03.jpg" alt="missing picture" class="Picture" />
+            </div>
+        </div>
+        <div class="mySlides">
+            <div class="subContainer">
+                <img src="img/inze/A04_i.png" alt="missing picture" class="Picture" />
+            </div>
+        </div>
+        <div class="mySlides">
+            <div class="subContainer">
+                <img src="img/inze/A06_1.jpg" alt="missing picture" class="Picture" />
+            </div>
+        </div>
+        <div class="mySlides">
+            <div class="subContainer">
+                <img src="img/inze/A06_2.jpg" alt="missing picture" class="Picture" />
+            </div>
+        </div>
+        <div class="mySlides">
+            <div class="subContainer">
+                <img src="img/inze/A06_3.jpg" alt="missing picture" class="Picture" />
+            </div>
+        </div>
+        <div class="mySlides">
+            <div class="subContainer">
+                <img src="img/inze/A07_i.png" alt="missing picture" class="Picture" />
+            </div>
+        </div>
+        <div class="mySlides">
+            <div class="subContainer">
+                <img src="img/inze/A08.jpg" alt="missing picture" class="Picture" />
+            </div>
+        </div>
+        <div class="mySlides">
+            <div class="subContainer">
+                <img src="img/inze/A09.jpg" alt="missing picture" class="Picture" />
+            </div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">
+            <img class="arrowL" src="img/icons/arrow_left2.png">
+        </a>
+        <a class="next" onclick="plusSlides(1)">
+            <img class="arrowR" src="img/icons/arrow_right2.png">
+        </a>
+
+        <a class="skipper" style="cursor: pointer" onclick="javascript: window.location ='SuperSalon36DE.html';">
+            näch. projekt
+        </a>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+    </div>
+
+    <script>
+        var slideIndex = 1; // index points to the slide shown 
+        showSlides(slideIndex); // show the first slide
+
+        function plusSlides(n) { // show the next/prev slide
+            showSlides(slideIndex += n); //also change var slideIndex
+        }
+
+        function currentSlide(n) { // show the slide with index=n
+            showSlides(slideIndex = n); //also change var slideIndex
+        }
+
+        function showSlides(n) { // show the slide with index=n  
+            var i; //counter for the loops 
+            var slides = document.getElementsByClassName("mySlides"); //get all the myslides
+            var dots = document.getElementsByClassName("dot"); //get all the dot elements
+            if (n > slides.length) { // if n is more than the number of slides
+                slideIndex = 1; //change var slideIndex to point to the first slide
+            }
+            if (n < 1) { // if n is less than 1
+                slideIndex = slides.length; //change var slideIndex to point to the last slide
+            }
+            for (i = 0; i < slides.length; i++) { // hide all slides
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block"; //show the correct slide
+            dots[slideIndex - 1].className += " active"; //apply class active to the correct dot
+        }
+    </script>
+
+    <script>
+        var winHeight = $(window).height();
+        var navHeight = $('.navbar').height();
+        var conHeight = $('body').height();
+        var sHeight = conHeight - navHeight;
+
+        $('.Container').css('height', winHeight + 'px');
+        $('.subContainer').css('height', sHeight - 35.84 + 'px');
+        $('.prev').css('padding-top', ((sHeight - 50) / 2) + 17.92 + 'px');
+        $('.prev').css('padding-bottom', ((sHeight - 50) / 2) - 17.92 + 'px');
+        $('.next').css('padding-top', ((sHeight - 50) / 2) + 17, 92 + 'px');
+        $('.next').css('padding-bottom', ((sHeight - 50) / 2) - 17.92 + 'px');
+    </script>
+
+    <div class="navbar">
+        <a style="cursor: pointer" onclick="javascript: window.location = 'indexDE.html';" id="logo"><img src="img/icons/logoR.png" alt="missing picture" /></a>
+        <div class="dropup">
+            <button class="dropbtn">Projekt</button>
+            <div class="dropup-content">
+                <a id="01" style="cursor: pointer" onclick="javascript: window.location = 'InfozentraleAufDemVollgutDE.html';">01</a>
+                <a id="02" style="cursor: pointer" onclick="javascript: window.location = 'SuperSalon36DE.html';">02</a>
+                <a id="03" style="cursor: pointer" onclick="javascript: window.location = 'MuseumOfTwoDE.html';">03</a>
+                <a id="04" style="cursor: pointer" onclick="javascript: window.location = 'DriveInLivingDE.html';">04</a>
+            </div>
+        </div>
+        <div class="titles">
+            <span id="slash"><img src="img/icons/slash.png" alt="missing picture" /></span>
+            <span id="MW">M<wbr>a<wbr>r<wbr>c<wbr>e<wbr>l W<wbr>a<wbr>c<wbr>h<wbr>a<wbr>l<wbr>a<wbr> <wbr></span>
+            <span id="INZE">I<wbr>n<wbr>f<wbr>o<wbr>z<wbr>e<wbr>n<wbr>t<wbr>r<wbr>a<wbr>l<wbr>e a<wbr>u<wbr>f d<wbr>e<wbr>m V<wbr>o<wbr>l<wbr>l<wbr>g<wbr>u<wbr>t<wbr> <wbr></span>
+            <span id="SUSA">S<wbr>u<wbr>p<wbr>e<wbr>r S<wbr>a<wbr>l<wbr>o<wbr>n 3<wbr>6<wbr> <wbr></span>
+            <span id="MOT">M<wbr>u<wbr>s<wbr>e<wbr>u<wbr>m o<wbr>f T<wbr>w<wbr>o<wbr> <wbr></span>
+            <span id="DIL">D<wbr>r<wbr>i<wbr>v<wbr>e I<wbr>n, L<wbr>i<wbr>v<wbr>i<wbr>n<wbr>g<wbr> <wbr></span>
+        </div>
+        <div class="right">
+            <a class="extra" style="cursor: pointer" onclick="javascript: window.location = 'InfozentraleAufDemVollgut.html';">en</a>
+            <a class="extra" id="con" style="cursor: pointer" onclick="javascript: window.location = 'contactDE.html';">kontakt</a>
+        </div>
+    </div>
+</body></html>
