@@ -219,6 +219,7 @@ h1 {
 
 #text {
     display: block;
+    background-color: white;
     margin-right: 10%;
     margin-left: 10%;
     max-width: 1000px;
@@ -325,8 +326,8 @@ h1 {
     position: relative;
     top: -110px;
     z-index: -1;
-    left: -35px;
-    width: 250px;
+    left: -27px;
+    width: 230px;
 }
 
 @media only screen and (max-width: 700px) {
@@ -340,4 +341,13 @@ h1 {
         margin-top: 250px;
         margin-right: 10%;
     }
+}
+
+#timeline {
+    position: absolute;
+    overflow: hidden;
+    top:-120px;
+    left:370px;
+    z-index: -2;
+    width: 3000px;
 }

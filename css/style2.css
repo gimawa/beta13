@@ -137,7 +137,7 @@ p {
     padding-left: 47.5px;
     background: transparent;
     color: transparent;
-    display:none;
+    display: none;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -196,21 +196,24 @@ p {
 
 /* SLIDER */
 
-h1 {
-    font-family: HKGroteskLight;
-    font-weight: normal;
-    font-size: 21px;
+#info {
+    max-height: 100%;
+    max-width: calc(100% - 71.68px);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-#info {
-    /* max-width: calc(100% - 71.68px); */
-    width: 80%;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, 50%);
+#buffer {
+    display: block;
+    float: left;
 }
 
 #list {
+    font-family: HKGroteskLight;
+    font-weight: normal;
+    font-size: 21px;
     display: block;
     max-width: 1000px;
     float: left;
@@ -219,9 +222,8 @@ h1 {
 #text {
     display: block;
     max-width: 1000px;
-    margin-top: 80px;
-    padding-bottom: 116px;
     float: right;
+    padding-top: 80px;
 }
 
 * {
@@ -305,7 +307,7 @@ h1 {
 
 .skipper {
     position: absolute;
-    top:23px;
+    top: 23px;
     right: 0;
     transform: rotate(-90deg) translate(-28.32px, +28.32px);
     font-family: HKGroteskRegular;
@@ -313,6 +315,6 @@ h1 {
     padding: 12px;
 }
 
-.skipper:hover{
-    color:red;
+.skipper:hover {
+    color: red;
 }
