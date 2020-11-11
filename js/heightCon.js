@@ -128,7 +128,7 @@
                     $('#timelineR2').css('top', textPos.top + textHeight + 45 + 'px');
                     $('#timelineR2').css('left', textPos.left + (textWidth * 0.5) + 'px');
                     $('#timelineR2').css('padding-bottom', navHeight + 'px');
-                } else if (winWidth >= 421) { //klein2/handy
+                } else if (winWidth >= 421) { //klein4/handy
                     $('#me').css('top', listPos.top - 217 + 'px');
                     $('#me').css('left', 'auto');
                     $('#me').css('right', 30 + 'px');
@@ -143,7 +143,7 @@
                     $('#timelineR2').css('top', textPos.top + textHeight + 45 + 'px');
                     $('#timelineR2').css('left', textPos.left + (textWidth * 0.5) + 'px');
                     $('#timelineR2').css('padding-bottom', navHeight + 'px');
-                } else { //klein/minihandy
+                } else if (winWidth >= 404) { //klein3/handy
                     $('#me').css('top', listPos.top - 217 + 'px');
                     $('#me').css('left', 'auto');
                     $('#me').css('right', 30 + 'px');
@@ -154,7 +154,37 @@
                     $('#timelineR2').css('display', 'block');
 
                     $('#timelineR1').css('top', listPos.top + 105 + 'px');
-                    $('#timelineR1').css('left', listPos.left + 250 + 'px');
+                    $('#timelineR1').css('left', listPos.left + 200 + 'px');
+                    $('#timelineR2').css('top', textPos.top + textHeight + 45 + 'px');
+                    $('#timelineR2').css('left', textPos.left + (textWidth * 0.5) + 'px');
+                    $('#timelineR2').css('padding-bottom', navHeight + 'px');
+                } else if (winWidth >= 391) { //klein2/handy
+                    $('#me').css('top', listPos.top - 217 + 'px');
+                    $('#me').css('left', 'auto');
+                    $('#me').css('right', 30 + 'px');
+
+                    $('#timelineHolder').css('display', 'none');
+                    $('#timelineR0').css('display', 'none');
+                    $('#timelineR1').css('display', 'block');
+                    $('#timelineR2').css('display', 'block');
+
+                    $('#timelineR1').css('top', listPos.top + 133 + 'px');
+                    $('#timelineR1').css('left', listPos.left + 200 + 'px');
+                    $('#timelineR2').css('top', textPos.top + textHeight + 45 + 'px');
+                    $('#timelineR2').css('left', textPos.left + (textWidth * 0.5) + 'px');
+                    $('#timelineR2').css('padding-bottom', navHeight + 'px');
+                } else { //klein/minihandy
+                    $('#me').css('top', listPos.top - 217 + 'px');
+                    $('#me').css('left', 'auto');
+                    $('#me').css('right', 30 + 'px');
+
+                    $('#timelineHolder').css('display', 'none');
+                    $('#timelineR0').css('display', 'none');
+                    $('#timelineR1').css('display', 'block');
+                    $('#timelineR2').css('display', 'block');
+
+                    $('#timelineR1').css('top', listPos.top + 164 + 'px');
+                    $('#timelineR1').css('left', listPos.left + 200 + 'px');
                     $('#timelineR2').css('top', textPos.top + textHeight + 45 + 'px');
                     $('#timelineR2').css('left', textPos.left + (textWidth * 0.5) + 'px');
                     $('#timelineR2').css('padding-bottom', navHeight + 'px');
@@ -248,7 +278,7 @@
                 } else if ((winWidth - (35.84 * 2)) >= ((sHeight - 35.84) * (16 / 9))) { // wenn breit, orientier dich an höhe
                     if ((sHeight - 35.84) <= (1000 * (9 / 16))) { // wenn absurd breit, bleib breiter als bild
                         $('#info').css('height', sHeight - 35.84 + 'px');
-                        $('#info').css('width', (winWidth - (35.84 * 2))  + 'px');
+                        $('#info').css('width', (winWidth - (35.84 * 2)) + 'px');
                     } else {
                         $('#info').css('height', sHeight - 35.84 + 'px');
                         $('#info').css('width', (sHeight - 35.84) * (16 / 9) + 'px');
