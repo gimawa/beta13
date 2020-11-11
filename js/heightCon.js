@@ -1,6 +1,6 @@
         $(document).ready(function () {
             setTimeout(function () {
-                var winWidth = $('body').width();
+                var winWidth = $(window).width();
                 var winHeight = $(window).height();
                 var navHeight = $('.navbar').height();
                 var conHeight = $('body').height();
@@ -45,7 +45,7 @@
                 var textHeight = $('#text').height();
                 var navHeight = $('.navbar').height();
 
-                var winWidth = $('body').width();
+                var winWidth = $(window).width();
                 var subTextHeight = $('#subText').height();
                 var moverConHeight = $('#moverCon').height();
                 var listPos = $('#list').offset();
@@ -162,7 +162,7 @@
 
         $(window).resize(function () {
             setTimeout(function () {
-                var winWidth = $('body').width();
+                var winWidth = $(window).width();
                 var winHeight = $(window).height();
                 var navHeight = $('.navbar').height();
                 var conHeight = $('body').height();
@@ -213,7 +213,7 @@
 
         $(window).on("orientationchange", function () {
             setTimeout(function () {
-                var winWidth = $('body').width();
+                var winWidth = $(window).width();
                 var winHeight = $(window).height();
                 var navHeight = $('.navbar').height();
                 var conHeight = $('body').height();
