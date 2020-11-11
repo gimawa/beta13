@@ -47,18 +47,116 @@
 
                 var winWidth = $('body').width();
                 var subTextHeight = $('#subText').height();
+                var moverConHeight = $('#moverCon').height();
+                var listPos = $('#list').offset();
+                var textPos = $('#text').offset();
+                var textWidth = $('#text').width();
+                var tlWidth = $('#timelineR2').width;
 
                 $('#buffer').css('height', (listHeight) + 'px');
                 $('#buffer').css('width', (infoWidth - listWidth) - 200 + 'px');
 
-                if ((textHeight + 80) >= (infoHeight - listHeight)) {
+                if ((subTextHeight + 80) >= (infoHeight - listHeight - moverConHeight)) {
                     $('#text').css('padding-bottom', (navHeight) + 'px');
                 } else {
                     $('#text').css('padding-bottom', '0px');
                 }
 
-                $('#mover').css('width', infoWidth + 'px');
-                $('#mover').css('height', (((infoHeight - listHeight) - textHeight - 80) * 0.382) + 'px');
+                // EXTRAS FÜR CONTACT
+
+                $('#moverCon').css('width', infoWidth + 'px');
+
+                if ((((infoHeight - listHeight) - subTextHeight - 80) * 0.382) >= 90) {
+                    $('#moverCon').css('height', (((infoHeight - listHeight) - subTextHeight - 80) * 0.382) + 'px');
+                } else {
+                    if (((infoWidth - listWidth) + ((winWidth - infoWidth) / 2)) >= 1000) { //groß/rechenr
+                        $('#moverCon').css('height', 90 + 'px');
+                    } else if (winWidth >= 610) { //mittel/ipad
+                        $('#moverCon').css('height', 90 + 'px');
+                    } else { //klein/handy
+                        $('#moverCon').css('height', 190 + 'px');
+                    }
+                }
+
+                if (winWidth >= (900 * 0.467328138)) {
+                    $('#timelineR2').css('height', 900 + 'px');
+                } else {
+                    $('#timelineR2').css('height', (winWidth * 2.1398240735) + 100 + 'px');
+                }
+
+                if (((infoWidth - listWidth) + ((winWidth - infoWidth) / 2)) >= 890) { //groß/rechenr
+                    $('#me').css('top', listPos.top - 110 + 'px');
+                    $('#me').css('left', listPos.left + 330 + 'px');
+                    $('#me').css('right', 'auto');
+
+                    $('#timelineHolder').css('display', 'block');
+                    $('#timelineR0').css('display', 'none');
+                    $('#timelineR1').css('display', 'none');
+                    $('#timelineR2').css('display', 'none');
+
+                    $('#timeline').css('top', listPos.top - 120 + 'px');
+                    $('#timeline').css('left', listPos.left + 240 + 'px');
+                } else if (winWidth >= 700) { //mittel/ipad
+                    $('#me').css('top', listPos.top - 110 + 'px');
+                    $('#me').css('left', listPos.left + 330 + 'px');
+                    $('#me').css('right', 'auto');
+
+                    $('#timelineHolder').css('display', 'none');
+                    $('#timelineR0').css('display', 'block');
+                    $('#timelineR1').css('display', 'none');
+                    $('#timelineR2').css('display', 'block');
+
+                    $('#timelineR0').css('top', listPos.top + 105 + 'px');
+                    $('#timelineR0').css('left', listPos.left + 300 + 'px');
+                    $('#timelineR2').css('top', textPos.top + textHeight + 45 + 'px');
+                    $('#timelineR2').css('left', textPos.left + (textWidth * 0.67) + 'px');
+                    $('#timelineR2').css('padding-bottom', navHeight + 'px');
+                } else if (winWidth >= 610) { //mittel2/ipad
+                    $('#me').css('top', listPos.top - 110 + 'px');
+                    $('#me').css('left', listPos.left + 330 + 'px');
+                    $('#me').css('right', 'auto');
+
+                    $('#timelineHolder').css('display', 'none');
+                    $('#timelineR0').css('display', 'none');
+                    $('#timelineR1').css('display', 'block');
+                    $('#timelineR2').css('display', 'block');
+
+                    $('#timelineR1').css('top', listPos.top + 105 + 'px');
+                    $('#timelineR1').css('left', listPos.left + 300 + 'px');
+                    $('#timelineR2').css('top', textPos.top + textHeight + 45 + 'px');
+                    $('#timelineR2').css('left', textPos.left + (textWidth * 0.5) + 'px');
+                    $('#timelineR2').css('padding-bottom', navHeight + 'px');
+                } else if (winWidth >= 421) { //klein2/handy
+                    $('#me').css('top', listPos.top - 217 + 'px');
+                    $('#me').css('left', 'auto');
+                    $('#me').css('right', 30 + 'px');
+
+                    $('#timelineHolder').css('display', 'none');
+                    $('#timelineR0').css('display', 'none');
+                    $('#timelineR1').css('display', 'block');
+                    $('#timelineR2').css('display', 'block');
+
+                    $('#timelineR1').css('top', listPos.top + 105 + 'px');
+                    $('#timelineR1').css('left', listPos.left + 300 + 'px');
+                    $('#timelineR2').css('top', textPos.top + textHeight + 45 + 'px');
+                    $('#timelineR2').css('left', textPos.left + (textWidth * 0.5) + 'px');
+                    $('#timelineR2').css('padding-bottom', navHeight + 'px');
+                } else { //klein/minihandy
+                    $('#me').css('top', listPos.top - 217 + 'px');
+                    $('#me').css('left', 'auto');
+                    $('#me').css('right', 30 + 'px');
+
+                    $('#timelineHolder').css('display', 'none');
+                    $('#timelineR0').css('display', 'none');
+                    $('#timelineR1').css('display', 'block');
+                    $('#timelineR2').css('display', 'block');
+
+                    $('#timelineR1').css('top', listPos.top + 105 + 'px');
+                    $('#timelineR1').css('left', listPos.left + 250 + 'px');
+                    $('#timelineR2').css('top', textPos.top + textHeight + 45 + 'px');
+                    $('#timelineR2').css('left', textPos.left + (textWidth * 0.5) + 'px');
+                    $('#timelineR2').css('padding-bottom', navHeight + 'px');
+                }
             }, 100);
         });
 

@@ -197,8 +197,6 @@ p {
 /* SLIDER */
 
 #info {
-    max-height: 100%;
-    max-width: calc(100% - 71.68px);
     position: relative;
     top: 50%;
     left: 50%;
@@ -206,6 +204,11 @@ p {
 }
 
 #buffer {
+    display: block;
+    float: left;
+}
+
+#mover {
     display: block;
     float: left;
 }
